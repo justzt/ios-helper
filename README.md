@@ -4,6 +4,12 @@ ios-helper
 ios项目开发的辅助类，仅供自己使用。
 通过cocoaPods快速部署到ios项目中。
 
+##主要包括功能：
+
+      1 本地文件管理
+      2 userdefaults管理
+      3 常用宏定义
+
 ##使用方法：
 
 1修改Podfile
