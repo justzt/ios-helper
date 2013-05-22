@@ -17,6 +17,9 @@ ios项目开发的辅助类，仅供自己使用。
       edit Podfile
       platform :iOS
       pod 'ios-helper',       '~> 1.0'
+      pod 'nextiveJson',      '~> 0.0.1'#解析json
+      pod 'ASIHTTPRequest',   '~> 1.8.1'#http请求lib
+      pod 'HTMLDocument',     '~> 1.5'#html解析
       
 2创建私有(就是仅仅自己使用，不公开到cocoaPods上)pod 
 
