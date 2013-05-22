@@ -21,7 +21,7 @@ ios项目开发的辅助类，仅供自己使用。
       pod 'ASIHTTPRequest',   '~> 1.8.1'#http请求lib
       pod 'HTMLDocument',     '~> 1.5'#html解析
       
-2创建私有(就是仅仅自己使用，不公开到cocoaPods上)pod 
+2创建私有(就是仅仅自己使用，不公开到cocoaPods上)spec 
 
      $ pod spec create ios-helper
      $ edit ios-helper.podspec 
