@@ -1,10 +1,3 @@
-//
-//  LocalFileManager.m
-//  HZWeather-mac
-//
-//  Created by justzt on 5/20/13.
-//  Copyright (c) 2013 justzt. All rights reserved.
-//
 
 #import "LocalFileManager.h"
 
