@@ -15,7 +15,7 @@ ios项目开发的辅助类，仅供自己使用。
 1修改Podfile(在项目的根目录,没有自己创建一个)
 
       edit Podfile
-      platform :iOS
+      platform :ios
       pod 'ios-helper',       '~> 1.0'
       pod 'nextiveJson',      '~> 0.0.1'#解析json
       pod 'ASIHTTPRequest',   '~> 1.8.1'#http请求lib
