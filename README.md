@@ -12,7 +12,7 @@ ios项目开发的辅助类，仅供自己使用。
 
 ##使用方法：
 
-1修改Podfile
+1修改Podfile(在项目的根目录,没有自己创建一个)
 
       edit Podfile
       platform :iOS
