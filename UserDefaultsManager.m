@@ -1,5 +1,4 @@
 
-
 #import "UserDefaultsManager.h"
 
 #define kFirstUseThisApp @"kFirstUseThisApp"
@@ -43,9 +42,9 @@ static UserDefaultsManager *manager = nil;
 }
 
 
-- (unsigned long)retainCount
+- (unsigned int)retainCount
 {
-    return UINT_MAX;  //装逼用的，这样打印出来的计数永远为-1
+    return UINT_MAX;  
 }
 
 
@@ -77,4 +76,5 @@ static UserDefaultsManager *manager = nil;
     [[self ud] setDouble:time forKey:kPreviousUpdateTime];
     [[self ud] synchronize];
 }
+
 @end
