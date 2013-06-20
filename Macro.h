@@ -35,4 +35,4 @@
 #define ShowStackSymbols NSLog(@"Stack trace: %@", [NSThread callStackSymbols])
 
 //dictionatry 取值NULL处理, 为空的话用给定的defultValue作为默认值
-#define DicValueForKey(dic,key,defultValue) [[dic objectForKey:key] class] ==  [NSNull class] ? defultValue : [dic objectForKey:key]
+#define DicValueForKey(dic,defultValue,key) [[dic objectForKey:key] class] ==  [NSNull class] ? defultValue : [dic objectForKey:key]
