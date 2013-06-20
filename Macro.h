@@ -33,3 +33,6 @@
 #define ShowCurrentLocation NSLog(@"Current selector: %@, Object class: %@, Filename: %@", NSStringFromSelector(_cmd), NSStringFromClass([self class]), [[NSString stringWithUTF8String:__FILE__] lastPathComponent])
 
 #define ShowStackSymbols NSLog(@"Stack trace: %@", [NSThread callStackSymbols])
+
+//  dictionatry 取值NULL处理, 为空的话用给定的defultValue作为默认值
+#define    DicValueForKey(key,defultValue) [[dataItem objectForKey:key] class] ==  [NSNull class] ? defultValue : [dataItem objectForKey:key]
