@@ -37,3 +37,4 @@
 //dictionatry 取值NULL处理, 为空的话用给定的defultValue作为默认值
 #define DicValueForKey(dic,defultValue,key) [[dic objectForKey:key] class] ==  [NSNull class] ? defultValue : [dic objectForKey:key]
 //just test
+//version 1.02
