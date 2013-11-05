@@ -5,10 +5,6 @@
 //  Created by Yang on 10/5/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
-
-#define SafeRelease(A) [A release];A=nil;
-#define SafeReleaseDelegate(A) [A setDelegate:nil];[A release];A=nil;
-
 #define StrFromFloat(F)     [NSString stringWithFormat: @"%f", F]
 #define StrFromInt(I)       [NSString stringWithFormat: @"%d", I]
 
