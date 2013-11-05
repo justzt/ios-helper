@@ -32,5 +32,11 @@
 
 //dictionatry 取值NULL处理, 为空的话用给定的defultValue作为默认值
 #define DicValueForKey(dic,defultValue,key) [[dic objectForKey:key] class] ==  [NSNull class] ? defultValue : [dic objectForKey:key]
-//just test
-//version 1.02
+
+//设备类型
+#define iphone5 [[UIScreen mainScreen] bounds].size.height > 480 ? YES : NO
+//屏幕高度
+#define Screen_height [[UIScreen mainScreen] bounds].size.height
+
+
+
