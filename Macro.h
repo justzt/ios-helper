@@ -37,6 +37,7 @@
 #define iphone5 [[UIScreen mainScreen] bounds].size.height > 480 ? YES : NO
 //屏幕高度
 #define Screen_height [[UIScreen mainScreen] bounds].size.height
-
-
+//
+#define RootNav  (UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController
+#define PoptoRootVCWithAnimated(value) [RootNav popToRootViewControllerAnimated:value]
 
