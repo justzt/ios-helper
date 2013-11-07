@@ -33,10 +33,12 @@
 //dictionatry 取值NULL处理, 为空的话用给定的defultValue作为默认值
 #define DicValueForKey(dic,defultValue,key) [[dic objectForKey:key] class] ==  [NSNull class] ? defultValue : [dic objectForKey:key]
 
+//系统版本
+#define SystermVersion [[UIDevice currentDevice] systemVersion].intValue
 //设备类型
 #define iphone5 [[UIScreen mainScreen] bounds].size.height > 480 ? YES : NO
 //屏幕高度
-#define Screen_height [[UIScreen mainScreen] bounds].size.height
+#define Screen_height (SystermVersion >= 7 ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.height-20)
 //
 #define RootNav  (UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController
 #define PoptoRootVCWithAnimated(value) [RootNav popToRootViewControllerAnimated:value]
