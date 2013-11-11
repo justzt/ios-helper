@@ -36,10 +36,13 @@
 //系统版本
 #define SystermVersion [[UIDevice currentDevice] systemVersion].intValue
 //设备类型
-#define iphone5 [[UIScreen mainScreen] bounds].size.height > 480 ? YES : NO
+#define iphone5 ([[UIScreen mainScreen] bounds].size.height > 480 ? YES : NO)
 //屏幕高度
 #define Screen_height (SystermVersion >= 7 ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.height-20)
+//可用区域高度，7之前的20px不能用，7之后的20px不要用
+#define AvailableHight ([[UIScreen mainScreen] bounds].size.height-20)
 //
-#define RootNav  (UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController
+#define SystermYStart (SystermVersion >= 7 ? 20 : 0)
+//
+#define RootNav  ((UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController)
 #define PoptoRootVCWithAnimated(value) [RootNav popToRootViewControllerAnimated:value]
-
