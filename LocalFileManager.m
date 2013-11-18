@@ -1,4 +1,3 @@
-
 #import "LocalFileManager.h"
 
 @implementation LocalFileManager
@@ -36,11 +35,6 @@ static LocalFileManager *manager = nil;
     return self; //确保计数唯一
 }
 
-
-- (unsigned long)retainCount
-{
-    return UINT_MAX;  //装逼用的，这样打印出来的计数永远为-1
-}
 
 
 - (id)autorelease
