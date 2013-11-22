@@ -45,4 +45,4 @@
 #define SystermYStart (SystermVersion >= 7 ? 20 : 0)
 //
 #define RootNav  ((UINavigationController*)[UIApplication sharedApplication].keyWindow.rootViewController)
-#define PoptoRootVCWithAnimated(value) [RootNav popToRootViewControllerAnimated:value]
+#define PoptoRootVCWithAnimated(value) [RootNav popViewControllerAnimated:value]
